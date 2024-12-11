@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Королева слёз</title>
+    <!-- Bootstrap CSS қосу -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-inner img {
+            height: 2000px;
+            object-fit: cover;
+        }
+        .carousel-inner img {
+    height: 1000px;
+    object-fit: cover;
+}
+.footer-section {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+        .contact-form label {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Жоғарғы мәзір -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Королева слёз</a>
+        </div>
+    </nav>
+
+    <!-- Слайдер -->
+    <div id="doramaCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#doramaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+            <button type="button" data-bs-target="#doramaCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+            <button type="button" data-bs-target="#doramaCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- 1-слайд -->
+            <div class="carousel-item active">
+                <img src="a.webp" class="d-block w-100" alt="Королева слёз - Сцена 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Басты кейіпкерлер</h5>
+                    <p>Олардың махаббат хикаясы осылай басталады.</p>
+                </div>
+            </div>
+            <!-- 2-слайд -->
+            <div class="carousel-item">
+                <img src="maxresdefault.jpg" class="d-block w-100" alt="Королева слёз - Сцена 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Сезімдер оянуы</h5>
+                    <p>Кейіпкерлер бір-біріне жақындай түседі.</p>
+                </div>
+            </div>
+            <!-- 3-слайд -->
+            <div class="carousel-item">
+                <img src="scale_1200.jpeg" class="d-block w-100" alt="Королева слёз - Сцена 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Махаббат сынақтары</h5>
+                    <p>Қиындықтар олардың қарым-қатынасын тексереді.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#doramaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Алдыңғы</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#doramaCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Келесі</span>
+        </button>
+    </div>
+    <section class="mt-5 container"></section>
+        <h3 class="mb-4 text-center">Қосымша ақпарат</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Сюжет туралы</h4>
+                <p>
+                    "Королева слёз" — бұл драмалық оқиғалар мен ерекше кейіпкерлерге толы дорама. Әсерлі сюжеттік желі көрерменнің жүрегін баурап алады.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4>Актерлер құрамы</h4>
+                <ul>
+                    <li><b>Ким Су Хён</b> — басты рөлдегі актер</li>
+                    <li><b>Сон Е Чжин</b> — басты актриса</li>
+                    <li><b>Ли Чжун</b> — қосалқы рөл</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Байланыс формасы -->
+    <section class="footer-section">
+        <div class="container">
+            <h3 class="text-center mb-4">Байланысқа шығу</h3>
+            <form class="contact-form">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name">Аты-жөні</label>
+                        <input type="text" class="form-control" id="name" placeholder="Аты-жөніңізді енгізіңіз">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email">Электрондық пошта</label>
+                        <input type="email" class="form-control" id="email" placeholder="Электрондық поштаңызды енгізіңіз">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message">Хабарлама</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Сіздің хабарламаңыз..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Жіберу</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Қосымша стиль -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Королева слёз. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <!-- Bootstrap JS қосу -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
